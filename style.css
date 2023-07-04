@@ -1,8 +1,65 @@
-body{
-    background-color: blue;
+*{
+     margin: 0;
+     padding: 0;
+}
+#idname{
+    background-color: red;
+    color:white;
+}
+
+.classname{
+    background-color: yellowgreen;
+    color: black;
+}
+
+
+h1{
+    color: rgb(81, 42, 172);
+    background-color: rgb(120, 10, 10);
+}
+
+div{
+    color: blueviolet;
+    background-color: yellow;
+}
+
+
+/* grouping of selectors  */
+h3,p{
+     background-color: blue;
+     font-size: 14px;
+     color: rgb(233, 246, 246);
+}
+
+
+div.this{
+    color: rgb(241, 241, 253);
+    background-color: rgb(21, 21, 20);
+}
+
+/* this is apply for solution of the question.2 in practice1.html  */
+#head{
+    background-color: brown;
+}
+
+/* this is for q.3 */
+.one{
+    background-color: rgb(45, 42, 37);
+    color: rgb(250, 247, 247);
+    font-size: 16px; 
     
 }
 
-.external{
-    color: red;
+
+/* this is for q.4 */
+.two{
+    background-color: blue;
+}
+
+.three{
+    color: white;
+}
+
+.four{
+    font-size: 40px ;
 }

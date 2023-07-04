@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Chapter 1 </title>
+    <!-- this way is adding css using style tag  
+    <style>
+        .classname{
+            color: violet;
+            background-color: red;
+        }
+
+        #idname{
+             background-color: brown;
+             color: yellowgreen;
+
+        }
+    </style>-->
+
+
+    <!-- here we are external css file and applying them in the html portion   -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- div.classname -->
+    <!-- here in div we have used inline css element  -->
+    <div class="classname" style="background-color: blueviolet;">
+        by this way we create class.
+        # class can be of many in number. one section can have many classes at a time.
+
+
+    </div>
+    <!-- div#idname -->
+    <div id="idname">
+        by this way we create id.
+        # id name will be only one it cannot be two .
+        in the css file we give property to class and id by giving the name of class and id
+        here #idname{
+
+        } is given in the file.
+
+    </div>
+
+    <h1>selectors are: classselector <br>
+        idselector <br>
+        ElementSelector
+    </h1>
+    <h2>here #idname , .classname are selectors <br>
+        in style.css we have h2 and its properties so it is id selector.
+
+    </h2>
+
+    <div>
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint sunt quisquam beatae fugit omnis
+        corrupti deleniti aliquid accusamus, consequatur atque animi ab aspernatur officiis. Expedita pariatur
+        perspiciatis amet exercitationem doloribus cupiditate provident? Ut, corporis inventore sit esse quos voluptas.
+    </div>
+
+    <h3>here h1 h2 div paragraph span ul nav main and select are the elements on which we
+        perform selectors .
+    </h3>
+
+    <p>we can group the selectors at one time .
+        like <br>
+        h1,h2,div,nav{
+
+        }
+    </p>
+    <div class="this"> here we are giving element selector .like div.this{
+        <br>
+        }
+    </div>
+
+    <p>* is used as the universal selector to select all the elements . </p>
+
+    <p>the priority order will be : inline>internal>external and sequencing also matter what is written first that will
+        be preffered. </p>
+        # css comments are /* */
+</body>
+
+</html>
