@@ -1,65 +1,131 @@
 *{
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
 }
-#idname{
+
+.red{
     background-color: red;
-    color:white;
+    height: 400px;
+    color: rgba(21, 20, 20, 0.874);
 }
 
-.classname{
-    background-color: yellowgreen;
-    color: black;
-}
-
-
-h1{
-    color: rgb(81, 42, 172);
-    background-color: rgb(120, 10, 10);
-}
-
-div{
-    color: blueviolet;
-    background-color: yellow;
-}
-
-
-/* grouping of selectors  */
-h3,p{
-     background-color: blue;
-     font-size: 14px;
-     color: rgb(233, 246, 246);
-}
-
-
-div.this{
-    color: rgb(241, 241, 253);
-    background-color: rgb(21, 21, 20);
-}
-
-/* this is apply for solution of the question.2 in practice1.html  */
-#head{
-    background-color: brown;
-}
-
-/* this is for q.3 */
-.one{
-    background-color: rgb(45, 42, 37);
-    color: rgb(250, 247, 247);
-    font-size: 16px; 
-    
-}
-
-
-/* this is for q.4 */
-.two{
-    background-color: blue;
-}
-
-.three{
+.green{
+    /* background-color: green; */
     color: white;
+    /* background-image: url(./img2.jfif); */
+    /* background-repeat:no-repeat; */
+    background-size:233px 400px ;
+    border: 2px solid red;
+    /* background-position:bottom   right  ; */
+    /* repeat-x will repeat the images in the x direction */
+
+    /* background-repeat: repeat-y;
+      this will repeat the image in the y direction */
+      /* background-repeat: no-repeat;
+      now in no-repeat there is no repetition of images. 
+        */
+        /* background-repeat:space;
+         this will create space b/w the images  */
+         /* background-size:contain ;
+           here all the background-image is fully visible here some space will be left but the image is fully visible.  */
+
+           /* background-image : cover ;
+             this will cover the whole space of the given width by the  image. 
+             no space will be remain.
+                */
+                /* background-image: auto ;
+                  here image will be in its original size .
+                    space may be left .
+                      according to the width. */
+
+                      /* background-size: height width;
+                          this may cause damage to the aspect ratio. */
+
+                          /* background-position: top left  */
+                           /* background-position: top right  */
+                           /* background-position: top center   */
+                            /* background-position: center right    */
+                             /* background-position: top center   */
+                              /* background-position: center center   */
+                               /* background-position: left  center   */
+                                /* background-position: bottom  center   */
+                                 /* background-position: bottom left    */
+                                  /* background-position: bottom  right    */
+
+
+                                  /* background-attachment: fixed */
+                                    /* background-attachment: scroll */
+                                      /* background-attachment: local  */
+
+                                         /* background-attachment: local ; */
+
+
+
+    /*   background-shorthand property  
+    background: color image repeat attachment position*/
+
+    background: green url(./img2.jfif) repeat-x scroll center center ;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    height: 1000px;
+    width: 1000px ;
+
+
 }
 
-.four{
-    font-size: 40px ;
+
+.dark-blue {
+  display: flex;
+  background-color: darkblue;
+  color: lightyellow;
+  list-style-type: none;
+  
+}
+
+.dark-blue li{
+  padding: 20px 50px;
+
+
+}
+.container{
+  background-color: darkred;
+  color: white;
+  
+  
+}
+.container1 {
+  background-image: url(./pxfuel\ \(1\).jpg);
+  background-size: 300px  ;
+  background-repeat: repeat-x;
+  width: 100px 300px ;
+  height: 233px 300px ;
+
+  
+
+}
+.box{
+  width: 300px  ;
+  height: 300px 300px;
+  background-image: url(./pxfuel\ \(1\).jpg);
+  background-size: 300px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+}
+
+
+.box2{
+  background: yellowgreen url(./img2.jfif) repeat-x local  ;
 }
