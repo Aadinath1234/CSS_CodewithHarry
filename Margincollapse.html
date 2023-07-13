@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin-collapse</title>
+    <style>
+        .box{
+            margin: 50px;
+            padding: 40px 30px;
+            border: 2px solid black;
+
+        }
+        .box2{
+            margin: 30px;
+            padding: 40px 30px;
+            border: 3px solid red;
+        }
+        .mx{
+            margin: 50px;
+            
+            border: 2px solid black;
+            width: 600px;
+            height: 300px;
+        }
+        .my{
+            /* margin: 50px; */
+            padding: 2px;
+            border: 2px  solid red;
+            /* box-sizing:content-box;
+             child element is overflow out of the box  */
+             box-sizing: border-box;
+             /* in border-box the child element is fitted completely in the parent box .  */
+            /* box sizing talks about padding and border not margin.  */
+            width: 100%;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>here box has margin 50px and box2 has margin 30px so bigger margin will be applied between them so here 50px margin is aquired by the box and box2 asks for 30px so he got the its 30px from that 50px of the box . this margin is shared between the box and box2 . box2 does not allocated its 30px seperately it is getting from box . This concept is known as the margin collapse . </h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione hic delectus quam saepe molestias cupiditate. Autem culpa excepturi esse magni, quam itaque sint dolorum enim sapiente, asperiores necessitatibus! Error cum totam sit explicabo nihil eligendi assumenda mollitia omnis perferendis maiores.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint molestiae maxime consectetur itaque nobis? Quisquam quod temporibus culpa eaque! Voluptatibus delectus quas, distinctio aut, cumque tenetur exercitationem, vero repellat eligendi similique alias ipsum cupiditate architecto placeat accusantium porro possimus recusandae sed qui culpa laborum aspernatur. Eum debitis in velit deserunt.
+    </div>
+
+     <!-- 
+        here we will learn about the concept of box-sizing : that is content-box or border box 
+        in content box when given to the parent box and child box and if you increase the width and height of the child box then the child box will overflow from the parent box that should not be accepted .
+        so when you use border-box at that time you are giving the effective height and width of the box and here child box will not overflow from the parent box. 
+
+      -->
+      <div class="mx">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempore harum quibusdam, illo amet rerum corrupti sed, sequi nobis quos voluptate quam aut architecto ea in facilis quisquam quidem quo necessitatibus, expedita provident cum ipsam dolore magnam? Dicta similique nam provident cumque adipisci rem doloribus. Tempora quod hic vel consectetur.
+        <div class="my">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae esse nobis earum exercitationem beatae optio culpa consequatur vel fugit expedita asperiores sint, tenetur nam et ullam eligendi! Assumenda porro odio eaque! Obcaecati molestias recusandae expedita reprehenderit, impedit totam dolorum porro animi rerum aliquid dignissimos id repudiandae corrupti maxime provident exercitationem?
+        </div>
+      </div>
+</body>
+</html>

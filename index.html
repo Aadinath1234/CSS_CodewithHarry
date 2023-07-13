@@ -3,80 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display property </title>
+    <title>Box Model</title>
     <style>
-        
-        .box1{
-            background-color: aqua;
-            color: rgb(21, 21, 21);
-            width: 400px;
-            height: 500px;
-            /* in display: inline  only margin-left works and remaining margin property does not works. padding-top not works with accuracy but the other padding properties does not works correctly. it also prevents the height and width property. */
-            display: inline;
-
+        *{
+            margin: 0;
+            padding: 0;
         }
-
-        .box2{
-            background-color: blueviolet;
-            color: white;
-            width: 400px;
-            height: 500px;
-            display: block;
-            /* this will take space in the its left and right who space available is taken by the block element . */
-            text-align: center;
-            /* this property sets the text of the box in the center not the whole box but only the text within it. if you set right then text shift to right side . if you set left then text shift to the left side.  */
-
-        }
-        .box3{
-            display: inline;
-            background-color: #151414;
-            color: white;
-        }
-        .box4{
-            display: inline;
-            background-color: rgb(242, 34, 172);
-            color: rgb(229, 221, 221);
-        }
-
-        .box5{
-            display: inline-block;
-            /* display: none, this property removes the block from its place completely another element can take its place.
-             */
-             /* visibility: hidden, here the box is not removed completely but its place is just reserved not one allowed to take its place. */
-            background-color: rgb(242, 34, 172);
-            color: rgb(229, 221, 221);
-            width: 300px;
+        .content{
             height: 300px;
-            margin: 51px;
-            padding: 125px;
-            
+            width: 1000px;
+            background-color: red;
+            margin: 97px 168px;
+            padding: 63px;
+            border: 4px solid black;
+             /*border statement can be written as :
+                    border-width: 4px;
+                    border-style: solid;
+                    border-color: red;
+                    combinely it is written as : 
+                       border: 2px solid red;
+                      */
+           border-radius: 40px ;
+
+           
         }
 
+        /* 
+        margin: 4px 3px 5px 8px;
+          here 4px = top , 3px = right , 5px = bottom, 8px=left.
+          remember this: 
+                         1. top
+                              
+             4.left                  2.right
+
+                          3. bottom      
+
+
+
+
+          if margin: 23px 44px;
+            here 23px is for top-bottom, 44px is for left-right.
+
+
+            or you can also this way:
+            margin-top: 70px;
+            margin-bottom: 3px;
+            margin-left: 8px;
+            margin-right: 10px;
+            same condition will be followed with the padding also.
+
+             
+
+         */
 
     </style>
-
 </head>
 <body>
-    
-    <div class="box1">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quas in possimus repellat ducimus hic asperiores ullam eius recusandae corrupti! Quia maiores laboriosam, atque delectus illum sed, nisi dolorum debitis veritatis obcaecati labore quaerat incidunt rerum, repellat quae maxime recusandae.
+    <div class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, exercitationem dolorem veniam corrupti nemo deleniti libero. Temporibus nostrum omnis corporis enim maxime. Culpa distinctio ex est magnam fugiat rerum, neque velit facilis aperiam ab, illum totam ipsum provident ipsam eum iste impedit esse optio ea dolorem! Cupiditate amet quis voluptatibus impedit vitae quidem a quod necessitatibus ipsum ratione doloremque natus nobis, ab atque maxime eos iusto dolorum tempora adipisci pariatur vero repellendus odio! Libero ducimus sed architecto magni repellat eveniet minima ratione sit et blanditiis cumque laudantium dicta earum ad, totam doloribus consequatur explicabo dolor perferendis veniam excepturi. Magni soluta nulla voluptate molestiae aliquam magnam, beatae blanditiis laborum corrupti. Modi aliquam eum labore sed asperiores, quos ea molestiae ad laboriosam officiis eveniet, commodi quae pariatur officia veniam, nulla beatae magnam quo. Sit deserunt, in doloremque repudiandae quaerat architecto sequi laudantium odit perferendis voluptas quibusdam amet cupiditate mollitia pariatur soluta quo! Necessitatibus tempora dicta fugiat laborum eius nostrum amet, quo pariatur fugit iure assumenda, nemo ut! Quia incidunt, cum exercitationem sequi magnam nam tenetur veniam iure optio repellendus reprehenderit suscipit, corporis molestias recusandae eius ea nesciunt debitis laudantium pariatur ratione esse, quisquam consequuntur? Ut ea eaque nostrum quasi cupiditate id adipisci?
     </div>
-    <div class="box2">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, hic repellendus! Corporis, velit rem odit dolor nam tempore mollitia accusantium debitis, aliquid voluptatibus quod error, provident in similique eum? Voluptas quod quam deserunt vitae corporis eos. Quos assumenda mollitia consectetur amet distinctio atque commodi iure, ex minus reprehenderit beatae maxime.
-    </div>
-    <div class="box3"> this is the box3 by using inline element you can take it to the side by side.  
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non.
-    </div>
-    <div class="box4">
-        this is the box4
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi?
-    </div>
-    <br><br><br>
-    <div class="box5">
-        this is the box5 it is having display: inline block , in inline-block margin padding height width all the properties are allowed 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi?
-    </div>
-
-
 </body>
 </html>
