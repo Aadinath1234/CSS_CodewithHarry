@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min-Max height and width </title>
+
+    <style>
+        .box{
+            min-width: 50vh;
+            background-color: aqua;
+            color: black;
+            font-size: 20px;
+            width: 30vh;
+            /* here this width will not be applicable because it is less than the 50vh. */
+           max-height: 100vh;
+           height: 120vh;
+           /* here the height will be only 100vh after this height the increase will be get stop. but here you can set the height less than 100vh but not more than 100vh if you alloting more than max-height then the height will stop in increasing when max-height limit is getting cross.  */
+            
+        }
+        .box2{
+            background-color: blueviolet;
+            max-height: 100vh;
+            font-size: 40px;
+            color: black;
+            height: 200vh;
+            /* increase in the height will be stopped after the 100vh height . but it can set to the less than 100vh but not more than 100vh height.  */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    min-height stands for that if you have given the min-height of the page is the 50vh then if you are redeclaring height of that page as the less than the 50vh then that height will be not applied on that page but it will remain as minimum to 50vh its height can be overwrite as the height more than the min-height. you get give it to  60, 70 or more than 50vh.but not less than the 50vh.
+    max-height stands for that you can give the height of the less that the max-height but not more than the max-height.
+    
+</div>
+
+<div class="box2">
+    height: 120vh;
+           /* here the height will be only 100vh after this height the increase will be get stop. but here you can set the height less than 100vh but not more than 100vh if you alloting more than max-height then the height will stop in increasing when max-height limit is getting cross.  */
+</div>
+    
+</body>
+</html>

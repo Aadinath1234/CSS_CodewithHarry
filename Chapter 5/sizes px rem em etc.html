@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizes px rem em and many more !!! </title>
+    <style>
+        html{
+            font-size: 40px;
+        }
+        .container{
+            font-size: 30px;
+        }
+        .box{
+            font-size: 2em;
+        }
+        .box2{
+            font-size: 3rem;
+            background-color: brown;
+            width: 130vh;
+            height: 60vw;
+        }
+
+        .box3{
+            background-color: blue;
+            width: 30vw;
+            height: 70vh;
+            /* here width can be given as the terms of the vh and height can be given as the vw. */
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+
+        <p>This is the paragraph</p>
+       <div class="box">
+        em is stands for the multiple of the parent element like if you its parent have the font-size: 2px and in below class you have given font-size: 3em then it will be shown as the 2*3= 6
+
+       </div><br><br><br>
+       <div class="box2">
+        rem is like em but it is relative to the size of the html tag . It will be multiple of the size of the html tag .
+       </div>
+
+       <div class="box3">
+        vw and vh are the relative sizes vw stands for the viewport width and vh stands for the viewport-height. so if you have given 40vw then it means to that it is getting width of 40% of the total viewport size. and same with the vh if 50vh then it will acquire the 50% height of the total viewport size . it adjustable because it is getting width and height wrt to viewport size that is a relative term . so it  is useful for creating the responsive pages and websites.
+
+       </div>
+
+       <div class="box4">
+
+        % is the relative to the parent element. here we give the width and height wrt to the size of the parent element. 
+       </div>
+
+       
+
+
+
+    </div>
+    <!--  -->
+    
+</body>
+</html>
