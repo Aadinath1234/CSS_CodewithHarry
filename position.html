@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions </title>
+    <style>
+       
+       
+       * {
+            margin: 0;
+            padding: 0;
+         } 
+
+
+        header {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 14px 3px;
+
+        }
+
+       header nav ul  li {
+            display: inline;
+            list-style-type: none;
+            padding: 12px 23px;
+        }
+
+        .container {
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid rgb(234, 216, 19);
+
+        }
+
+        .box {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            position: static;
+        }
+
+        .container2 {
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+
+        }
+
+        .box2 {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            left: 176px;
+
+            top: 32px;
+
+        }
+
+        .box3 {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+            right: 80px;
+            bottom: 75px;
+        }
+
+        .boxx {
+            background-color: rgb(53, 116, 116);
+            width: 200px;
+            height: 200px;
+
+
+        }
+
+        .box22 {
+            background-color: rgb(122, 192, 227);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 19px;
+
+        }
+
+        .containerrr {
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            padding: 26px 55px;
+        }
+        
+        .boxxx {
+            background-color: aqua;
+            width: 20px;
+            height: 23px;
+            position: relative;
+            left: 779px;
+            bottom: 48px;
+        }
+
+        .absolute{
+            background-color: rgb(15, 227, 107);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right:0;
+            
+        }
+
+        .container11 {
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            position: relative;
+
+        }
+
+        .containerfixed{
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            position: relative;
+           
+            
+            
+        }
+
+        .fixedd{
+
+            background-color: rgb(15, 227, 107);
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+           
+        }
+        .fixedbox{
+            background-color: rgb(122, 192, 227);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            
+        }
+
+        .containersticky{
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            position: sticky;
+            bottom: 0;
+            color: white;
+           
+        }
+
+        .stickybox{
+            background-color: rgb(122, 192, 227);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            
+        }
+
+        .boxes{
+            background-color: blueviolet;
+            width: 50vw;
+            height: 50vh;
+            margin: auto;
+            position: relative;
+            bottom: 0;
+            color: white;
+            
+        }
+
+        .zindex{
+            background-color: rgb(122, 192, 227);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;
+        }
+        .z-index{
+            background-color: rgb(15, 227, 107);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 63px;
+            color: black;
+           
+        }
+
+        .list{
+            background-color: brown;
+            padding: 39px 136px;
+            
+            
+          
+        }
+
+        .list ul li{
+            list-style: square inside  ;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About-Us</li>
+                <li>Contact</li>
+                <li>Terms and Policy</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="box">
+            On doing position static at that time no properties like : top/bottom/left/right/z-index has no effects on
+            it. when position changes from the static at that time this properties may work properly.
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="container2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="box2">
+            Now we are using position : relative , in it box will remain on its place if no properties are added but if
+            we add property then we could see the changes.
+        </div>
+    </div><br><br><br>
+
+
+    <div class="container2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="box3">
+            Now we are using position : relative , in it box will remain on its place if no properties are added but if
+            we add property then we could see the changes.
+        </div>
+    </div> <br><br><br>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="box22">
+            On doing position static at that time no properties like : top/bottom/left/right/z-index has no effects on
+            it. when position changes from the static at that time this properties may work properly.
+        </div>
+        <div class="boxx">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate doloribus alias sit, fuga
+            saepe sed expedita provident numquam consequatur.
+        </div>
+    </div>
+
+
+
+    <br><br><br><br><br><br><br>
+
+    <div class="containerrr">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="boxxx">
+            On doing position static at that time no properties like : top/bottom/left/right/z-index has no effects on
+            it. when position changes from the static at that time this properties may work properly.
+        </div>
+    </div><br><br><br>
+
+
+    <div class="container11">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="absolute">
+           so here the green color box having position absolute has covered the below box they just overlapped on each other. this element is removed from the container but  it still present there and on doing top 0 it is attached to top of the page . here this box will find for its first non-static element , first it goes to the container but it is  not non-static , then it goes to body , it is also not, now it goes to the html element it is also not , but now nothing remain so it suppose be its first non-static element. when doing position : relative of the container , till we don't have declared the position of the container . but now it is relative so the green box will find its first non-static element as the container. so it changes will be seen there will be wrt the container. if you do the left : 0 and right: 0 , top: 0 and bottom : 0 that will be done wrt the container.  
+
+        </div>
+        <div class="boxx">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate doloribus alias sit, fuga
+            saepe sed expedita provident numquam consequatur.
+        </div>
+    </div>
+    <br><br><br>
+
+
+    <div class="containerfixed">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident incidunt cumque laboriosam.
+            Exercitationem sequi aliquam saepe doloribus explicabo debitis similique repellat, laboriosam dolores, quae,
+            tempora tempore inventore laudantium excepturi harum!
+        </p>
+
+        <div class="fixedd">
+           in the fixed position the elements are positioned wrt the browser window . 
+           on doing fixed position of the box , it's while scrolling the container it will remain fixed to its position. it is not affected by scrolling the container.it is right:0 , bottom:0.  
+
+
+        </div>
+        <div class="fixedbox">
+            fixedbox
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate doloribus alias sit, fuga
+            saepe sed expedita provident numquam consequatur.
+        </div>
+    </div>  <br><br><br>
+
+    <div class="containersticky">
+        <p>
+            this is the container whose position is sticky and bottom:0 
+            now will scrolling it is hanged and other elements are scrollable . when it goes to scroll from the top , the sticky element is hanged on the page.  
+        </p>
+
+        
+        <div class="stickybox">
+              <h1> Stickybox</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cupiditate doloribus alias sit, fuga
+            saepe sed expedita provident numquam consequatur.
+        </div>
+    </div>
+<br><br><br><br><br><br>
+
+    <div class="boxes">
+    <div class="zindex">
+        <h1>this is the first element</h1>
+   in the two overlapped elements whose z-index: is more in number then that element will be seen first and above the second element.  if the second element is having more zindex then that element will seen first wrt the first element. 
+
+    </div><br><br><br>
+
+    <div class="z-index">
+        <h1>This is the second element. </h1><br><br><br><br><br>
+        this is the second element we have given the first element as z-index: 1; and second element is not given any z-index value for that reason the first element is overlapped on the second element if we give the more z-index value to the second element that it will overlapped on the first element.  
+    </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="list">
+<h1>on doing list-style: square you can see the square bullets infront of the li and doing inside which is the list-style-position  then it is inside of the ul and if you do outside  then it is the outside of the ul and list-style-image in it putting the url of the image you can see the image in that tag.  this all the property can be put inside the   list-style: " " , in the sequence. 
+
+    1. list-style-type
+    2. list-style-position
+    3. list-style-image , in it give the:  url("image location")
+
+</h1>
+<ul>
+    <li  >ramesh</li> <br>
+    <li >suresh</li><br>
+    <li>puresh</li><br>
+    <li>luresh</li>
+</ul>
+</div>
+
+</body>
+
+</html>
