@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+
+            flex-wrap: wrap;
+            /* flex-wrap:wrap-reverse, in this wrapping will be done in the opposite manner.  */
+
+            justify-content: center;
+            /* to horizonatally center the items . */
+            /* justify-content: flex-start;  */
+            background-color: rgb(189, 241, 18);
+            height: 150vh;
+            align-items: center;
+            /* align-items: center , to vertically center the items.  */
+            /* align-items: flex-end.  at that time the items are at the bottom of the container.  */
+
+        }
+
+        .box {
+            height: 234px;
+            width: 345px;
+            background-color: aqua;
+
+            font-size: 25px;
+            border: 2px solid black;
+            order: 4;
+            align-self: flex-end;
+            flex-grow: 1;
+        }
+
+        .box2 {
+            height: 234px;
+            width: 345px;
+            background-color: blueviolet;
+
+
+            font-size: 25px;
+            border: 2px solid black;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>box1</h1>
+            <p>
+                using align-items: center when you wrap the boxes at that time while wrapping the boxes there is the gap between the boxes while in the align-content: center , while wrapping there is no spacing between the boxes. you see that boxes in the collective form . 
+            </p>
+        </div>
+        <div class="box2">
+            <h1>box2</h1>
+            <p>here in the box1 we have applied order:4 so it is placed in the 4th position, if you give it order 3 then it will be in the third order. if order 2 then it will be on the 2nd position. </p>
+        </div>
+        <div class="box2">
+            <h1>box2a</h1>
+            <p>here in the box1 we have applied align-self: flex-end. so  that one box1 is placed to end of the container. other boxes will be remain on its places. </p>
+        </div>
+        <div class="box2">
+            <h1>box2b</h1>
+            <p>on applying the flex-grow in the box1 so that its size is getting increased wrt the other boxes if you apply same with the other boxes like box2 at that time you will relative growth in the other boxes when both given flex-grow 1 then they seems to be equal in size when increasing the no. of the flex-grow then relative decrease in the size of the box1 and a little growth in the sizes of the box2.  its reverse is the flex-shrink . </p>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
