@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property </title>
+    <style>
+        
+        .box1{
+            background-color: aqua;
+            color: rgb(21, 21, 21);
+            width: 400px;
+            height: 500px;
+            /* in display: inline  only margin-left works and remaining margin property does not works. padding-top not works with accuracy but the other padding properties does not works correctly. it also prevents the height and width property. */
+            display: inline;
+
+        }
+
+        .box2{
+            background-color: blueviolet;
+            color: white;
+            width: 400px;
+            height: 500px;
+            display: block;
+            /* this will take space in the its left and right who space available is taken by the block element . */
+            text-align: center;
+            /* this property sets the text of the box in the center not the whole box but only the text within it. if you set right then text shift to right side . if you set left then text shift to the left side.  */
+
+        }
+        .box3{
+            display: inline;
+            background-color: #151414;
+            color: white;
+        }
+        .box4{
+            display: inline;
+            background-color: rgb(242, 34, 172);
+            color: rgb(229, 221, 221);
+        }
+
+        .box5{
+            display: inline-block;
+            /* display: none, this property removes the block from its place completely another element can take its place.
+             */
+             /* visibility: hidden, here the box is not removed completely but its place is just reserved not one allowed to take its place. */
+            background-color: rgb(242, 34, 172);
+            color: rgb(229, 221, 221);
+            width: 300px;
+            height: 300px;
+            margin: 51px;
+            padding: 125px;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid quas in possimus repellat ducimus hic asperiores ullam eius recusandae corrupti! Quia maiores laboriosam, atque delectus illum sed, nisi dolorum debitis veritatis obcaecati labore quaerat incidunt rerum, repellat quae maxime recusandae.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, hic repellendus! Corporis, velit rem odit dolor nam tempore mollitia accusantium debitis, aliquid voluptatibus quod error, provident in similique eum? Voluptas quod quam deserunt vitae corporis eos. Quos assumenda mollitia consectetur amet distinctio atque commodi iure, ex minus reprehenderit beatae maxime.
+    </div>
+    <div class="box3"> this is the box3 by using inline element you can take it to the side by side.  
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, non.
+    </div>
+    <div class="box4">
+        this is the box4
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi?
+    </div>
+    <br><br><br>
+    <div class="box5">
+        this is the box5 it is having display: inline block , in inline-block margin padding height width all the properties are allowed 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, excepturi?
+    </div>
+
+
+</body>
+</html>
