@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter_08 q.1 solution</title>
+
+    <style>
+        .mySlides fadehow-container {
+            background-color: aqua;
+            width: 100vw;
+            height: 50vh;
+            display: grid;
+            align-items: center;
+
+        }
+
+        .box {
+            background-color: blueviolet;
+            width: 200px;
+            height: 100px;
+            animation-name: thinanimation;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+
+
+        }
+
+        @keyframes thinanimation {
+            from {
+                width: 200px;
+                height: 100px;
+            }
+
+            to {
+                width: 50vw;
+                height: 500px;
+            }
+
+        }
+
+
+        .box2 {
+            background-color: brown;
+            width: 200px;
+            height: 100px;
+            transition: width 5s ease-in-out, heigth 5s ease-in-out;
+            color: white;
+
+
+
+
+        }
+
+        .box2:hover {
+
+            width: 50vw;
+            height: 500px;
+        }
+
+
+        .image {
+            width: 190px;
+            height: 194px;
+           animation: rota 5s infinite linear;
+           padding: 2px 668px;
+        }
+
+       @keyframes rota {
+        from {
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+        
+       }
+    </style>
+</head>
+
+<body>
+
+    <div class="mySlides fadehow-container">
+        <div class="box">
+
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="mySlides fadehow-container">
+        <div class="box2">
+            This is box where we have applied transition property.
+
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="mySlides fadehow-container">
+        <div class="box3">
+            <img src="./pxfuel (1).jpg" alt="Image" class="image">
+        </div>
+    </div>
+</body>
+
+</html>
