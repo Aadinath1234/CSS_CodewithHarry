@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+            width: 100vw;
+            height: 50vh;
+            font-size: 30px;
+            color: white;
+        }
+
+       
+
+            @media only screen and (max-width:500px) {
+                .container{
+            background-color:black;
+                }
+            }
+
+            @media (min-width:484px) and (max-width:811px) {
+                .container{
+                    background-color: aqua;
+                }
+                
+            }
+            @media  (min-width: 828px) and (max-width:1012px) {
+            .container{
+                background-color: blue;
+            }
+                
+            
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        Media query is used to create the responsive designs . like
+        @media  screen and (max-width: 800px){
+
+        }
+        so this defines that this property will be apply to width when it size is from 0 to 800px .
+        <br><br><br>
+        
+        @media only screen and (max-width:500px) {
+                .container{
+            background-color:black;
+                }
+            }
+        <br><br><br>
+        @media (min-width:484px) and (max-width:811px) {
+                .container{
+                    background-color: aqua;
+                }
+                
+            }
+
+            <br><br><br>
+            @media  (min-width: 828px) and (max-width:1012px) {
+            .container{
+                background-color: blue;
+            } 
+        }
+
+    </div>
+
+</body>
+</html>
+
+
