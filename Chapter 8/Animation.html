@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: blueviolet;
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+            animation-name: widthAnimation;
+            animation-duration: 3s;
+            /* for how many time animation would be performed. */
+            animation-delay: 1s;
+            /* after 1second animation would be performed. */
+            animation-iteration-count: 3;
+            /* for how many times animation would be performed.  */
+            animation-direction: alternate-reverse;
+            /* in what direction animation would be performed. */
+
+            animation-timing-function:ease-in ;
+            /* process of animation like it is moving slowly initially and then it increases its speed.  */
+            /* shorthand property: 
+              animation: widthAnimation 3s ease-in 1s 3 alternate-reverse; */
+
+        }
+
+        /* now here we are applying animation  */
+        /* by only writing this animation could not be perform for that you have to write animation properties. and the name widthAnimation can be replaced by any name you wanted to .  */
+        /* @keyframes widthAnimation {
+            /* here the from is the starting point. */
+            /* from{
+                width: 300px;
+                height: 300px;
+            }
+            to{
+                width: 600px;
+                height: 100vh;
+             }} */
+            
+            /* here to is the end point .  */
+       
+
+        /* animation can also be written as in the % value.  */
+        @keyframes widthAnimation {
+            0%{
+                width: 300px;
+                height: 300px;
+            }
+            50%{
+                width: 600px;
+                height: 50vh;
+            }
+
+            80%{
+                width: 800px;
+                height: 80vh;
+
+            }
+
+            100%{
+                width: 1000px;
+                height: 100vh;
+            }
+        }
+
+        .box2{
+            width: 400px;
+            height: 500px;
+            background-color: blue;
+            animation: boxanimation 4s ease-in-out 1s 5 alternate-reverse;
+        }
+
+        @keyframes boxanimation {
+            from{
+                width: 300px;
+                height: 300px;
+            }
+            to{
+                width: 600px;
+                height: 100vh;
+             }} 
+            
+        
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+
+        <div class="box">
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box2">
+            this is box2
+        </div>
+    </div>
+</body>
+</html>

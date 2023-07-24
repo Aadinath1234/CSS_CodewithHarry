@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter_08 Transform , transition and Animation</title>
+    <style>
+        .container {
+            background-color: aqua;
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .box {
+            background-color: blueviolet;
+            border: 2px solid black;
+            transform: translate(124px, 124px) rotate(0.5turn);
+        }
+
+        .box2 {
+            background-color: rgb(215, 46, 187);
+            border: 2px solid black;
+            transform: translate(124px, 124px) rotate(45deg);
+            transform-origin: 0;
+            color: white;
+
+        }
+
+        .box3 {
+            background-color: rgb(182, 145, 176);
+            border: 2px solid black;
+            /* transform: scaleX(8); */
+            /* transform: scaleY(4); this can be written as */
+            transform: scale(8, 4);
+            /* here 8 is scaleX and 4 is scaleY */
+
+            color: white;
+        }
+
+        .box4 {
+            background-color: rgb(42, 165, 101);
+            color: white;
+            /* transform: skewX(10deg); */
+            /* transform: skewY(10deg); */
+            transform: skew(10deg, 10deg);
+            /* shorthand property of skewX and skewY */
+
+
+        }
+
+        .box5 {
+            background-color: rgb(104, 226, 43);
+            color: white;
+            transform: rotateX(60deg) rotateY(69deg) rotateZ(45deg);
+        }
+
+        .box6 {
+            background-color: blue;
+            color: white;
+
+        }
+
+        img {
+            width: 500px;
+            height: 109px;
+            margin: 21px 111px;
+            padding: 2px 65px;
+            height: 317px;
+        }
+
+        img:hover{
+            width:56px;
+        }
+
+        img{
+             transition-property: width;
+             transition-duration: 3s;
+             /* this is duration of the transition for that transition is being performed. */
+             transition-timing-function: ease-in;
+             transition-delay: 2s;
+             /* transition-delay is the time interval after that transition will get started and perform its action.  */
+             /* shorthand property:
+                transition: width 3s ease-in 2s */
+                /* you can set multiple properties in the transition. 
+                   like for width and height */
+                   transition: width 2s ease-in, height 3s ease-in;
+                   /*here we have set width and height in transition , this shows the transition using multiple properties.  */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>
+                here in the box we have applied transform property so transform: translate(124px,123px) means it
+                translating in x direction by 124px and in y direction by 123px.</h1>we are also applying the rotate(0.5
+            turn) it is rotating 0.5 turns.
+        </div>
+
+        <div class="box2">
+            this is the box2.here we have applied various properties like transform:rotate(45deg) and it is rotating
+            from origin which is 0 like transform-origin: 0;
+        </div>
+
+
+    </div><br><br><br>
+
+    <div class="container">
+        <div class="box3">
+            In this box we have applied scaleX and scale y property in transform.
+            transform:scaleX(8); and transform:scaleY(4); it's shorthand would be transform:scale(8,4); here 8 is for
+            scalex and 4 is for scaleY.
+        </div><br><br><br><br><br>
+        <div class="box4">
+            transform:skewX(10deg); this tilt the content in given degree manner inside the box like italics in opposite
+            manner.
+            transform:skewY(10deg) it rotate the box in y direction. more the degree no , more will be its rotation. its
+            shorthand can be written as transform: skew(10deg,10deg);
+
+            if you do transform: matrix(scaleX(), skewY(),skewX(),scaleY(),translateX(),translateY()); matrix have this
+            values at one time.
+        </div>
+
+
+    </div>
+    <br><br><br><br><br>
+
+    <div class="container">
+        <div class="box5">
+            here we are applying the transform: rotateX();
+            transform: rotateY();
+            transform: rotateZ();
+            this is the 3d transform methods.
+            in rotateX(45deg) it is rotated from 45degree horizontally in rotateY(45deg) it rotated vertically and in
+            rotateZ it is rotated in Z axis.
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div class="box6">
+            In this box we have applied CSS TRANSITION PROPERTY!!!
+            <img id="myImage" src="./pxfuel (1).jpg" alt="Image">
+            <button id="btn">Toggle</button>
+            <br>
+            transition property is the property which you want to transition. 
+            like you want transition in width property so you will do transition-property:width;
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<script>
+    myImage.style.width ="56px"
+    myImage.style.height ="20px"
+    btn.addEventListener("click", ()=>{
+        myImage.style.height = '300px';
+        if(myImage.style.width === '500px')
+        {
+            myImage.style.width="56px";
+        }
+        else if(myImage.style.width === '56px'){
+            myImage.style.width = "500px";
+        }
+    })
+</script>
+
+</html>
